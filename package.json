@@ -1,0 +1,74 @@
+{
+  "name": "cv-delete-s",
+  "displayName": "cv-delete-s",
+  "description": "quick cv-delete-s",
+  "version": "1.0.1",
+  "publisher": "ShuangDa1018",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "author": "双哥 <763943829@qq.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShuangDa1018/cv-delete-s.git"
+  },
+  "homepage": "https://github.com/ShuangDa1018/cv-delete-s",
+  "bugs": "https://github.com/ShuangDa1018/cv-delete-s/issues",
+  "keywords": [
+    "refactor",
+    "javascript",
+    "typescript",
+    "cv-delete-s"
+  ],
+  "activationEvents":[],
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cv-delete-s.deleteFunction",
+        "category": "DeleteFunction",
+        "title": "cv-delete-s"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "cv-delete-s.deleteFunction",
+        "key": "ctrl+shift+backspace",
+        "mac": "cmd+R F"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc",
+    "watch": "tsc -watch",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "test:unit": "vitest --run"
+  },
+  "devDependencies": {
+    "@types/babel__traverse": "^7.18.2",
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.72.0",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "@vscode/test-electron": "^2.1.5",
+    "eslint": "^8.20.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.7.4",
+    "vitest": "^0.24.1"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.19.4",
+    "@babel/traverse": "^7.19.4",
+    "@vue/compiler-sfc": "^3.2.40"
+  }
+}
