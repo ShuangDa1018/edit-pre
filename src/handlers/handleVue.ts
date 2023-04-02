@@ -13,7 +13,7 @@ export function getDeleteFunctionNodeVue(index: number, code: string) {
     : descriptor.script!.loc;
 
   const { loc } = compileScript(descriptor, {
-    id: "cv-delete-s",
+    id: "edit-pre",
   });
 
   const functionNode = getDeleteFunctionNodeJs(

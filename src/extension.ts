@@ -2,7 +2,7 @@ import * as vscode from "vscode";
 import { getDeleteFunctionNode } from "./handlers";
 
 export function activate(context: vscode.ExtensionContext) {
-  const commandId = "cv-delete-s.deleteFunction";
+  const commandId = "edit-pre.deleteFunction";
   const disposable = vscode.commands.registerCommand(commandId, () => {
     try {
       deleteFunction();

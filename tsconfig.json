@@ -8,7 +8,7 @@
 			"DOM"
 		],
 		"sourceMap": true,
-		"rootDir": "src",
+		"rootDir": "src1",
 		"strict": true,   /* enable all strict type-checking options */
 		"noImplicitAny": false
 		/* Additional Checks */
@@ -18,7 +18,7 @@
 		// "noUnusedParameters": true,  /* Report errors on unused parameters. */
 	},
 	"include": [
-		"src/**/*"
+		"src1/**/*"
 	],
 	"exclude": [
 		"node_modules",

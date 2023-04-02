@@ -2,7 +2,7 @@ import { describe, it, expect, test } from "vitest";
 import { getDeleteFunctionNodeJs } from "../handlers/handleJs";
 
 describe("FunctionDeclaration", () => {
-  it("should cv-delete-s at index Position", () => {
+  it("should edit-pre at index Position", () => {
     // getName
     let index = 29;
 
@@ -169,7 +169,7 @@ describe("FunctionDeclaration", () => {
 });
 
 describe("FunctionExpression", () => {
-  it("should cv-delete-s at index Position", () => {
+  it("should edit-pre at index Position", () => {
     // getName function
     let index = 45;
 
@@ -341,7 +341,7 @@ describe("FunctionExpression", () => {
 });
 
 describe("ArrowFunctionExpression", () => {
-  it("should cv-delete-s at index Position", () => {
+  it("should edit-pre at index Position", () => {
     // getName
     let index = 29;
 

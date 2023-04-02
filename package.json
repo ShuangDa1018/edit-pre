@@ -1,7 +1,7 @@
 {
-  "name": "cv-delete-s",
-  "displayName": "cv-delete-s",
-  "description": "quick cv-delete-s",
+  "name": "edit-pre",
+  "displayName": "edit-pre",
+  "description": "quick edit-pre",
   "version": "1.0.1",
   "publisher": "ShuangDa1018",
   "engines": {
@@ -11,15 +11,15 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ShuangDa1018/cv-delete-s.git"
+    "url": "https://github.com/ShuangDa1018/edit-pre.git"
   },
-  "homepage": "https://github.com/ShuangDa1018/cv-delete-s",
-  "bugs": "https://github.com/ShuangDa1018/cv-delete-s/issues",
+  "homepage": "https://github.com/ShuangDa1018/edit-pre",
+  "bugs": "https://github.com/ShuangDa1018/edit-pre/issues",
   "keywords": [
     "refactor",
     "javascript",
     "typescript",
-    "cv-delete-s"
+    "edit-pre"
   ],
   "activationEvents":[],
   "categories": [
@@ -29,16 +29,31 @@
   "contributes": {
     "commands": [
       {
-        "command": "cv-delete-s.deleteFunction",
-        "category": "DeleteFunction",
-        "title": "cv-delete-s"
+        "command": "edit-pre.delete-s",
+        "category": "delete-s",
+        "title": "edit-pre"
       }
     ],
     "keybindings": [
       {
-        "command": "cv-delete-s.deleteFunction",
-        "key": "ctrl+shift+backspace",
-        "mac": "cmd+R F"
+        "command": "edit-pre.copy-s",
+        "key": "alt+c",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "edit-pre.paste-s",
+        "key": "alt+v",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "edit-pre.cut-s",
+        "key": "alt+x",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "edit-pre.delete-s",
+        "key": "alt+d",
+        "when": "textInputFocus"
       }
     ]
   },

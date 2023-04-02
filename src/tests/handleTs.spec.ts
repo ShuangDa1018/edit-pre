@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { getDeleteFunctionNodeJs } from "../handlers/handleJs";
 describe("handle ts", () => {
-  it("should cv-delete-s at index Position", () => {
+  it("should edit-pre at index Position", () => {
     let index = 20;
 
     const code = `
