@@ -2,12 +2,13 @@
   "name": "edit-pre",
   "displayName": "edit-pre",
   "description": "quick edit-pre",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "ShuangDa1018",
   "engines": {
     "vscode": "^1.72.0"
   },
   "author": "双哥 <763943829@qq.com>",
+  "icon":"images/icon.png",
   "license": "MIT",
   "repository": {
     "type": "git",
